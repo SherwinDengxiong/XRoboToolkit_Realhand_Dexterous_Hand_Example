@@ -115,7 +115,7 @@ elif [[ "$1" == "--install" ]]; then
     cd "$REPO_ROOT"
 
     # dex_retargeting (RealHand fork hosted on GitHub)
-    $UV pip install --force-reinstall --no-deps "$DEX_RETARGETING_REPO_URL"
+    $UV pip install --force-reinstall "$DEX_RETARGETING_REPO_URL"
 
     # RealHand SDK (new realbot-python-sdk)
     $UV pip install git+https://github.com/RealHand-Robotics/realbot-python-sdk.git
